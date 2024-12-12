@@ -1,0 +1,53 @@
+NLP => Natural Language Processing
+
+Data => 
+1. Structural data => well structured ex: data in CSV, Excel, SQL
+Customer ID	Name	Surname	Gender	Age	Region	Job Classification	Date Joined	Balance
+
+2. unstructured data
+web pages, email, blogs, tweets
+3. semi structured data
+
+Customer ID	Name	Surname	Gender	Age	Region	Job Classification	Date Joined	Balance
+
+
+Customer ID	Name	Surname	Gender	Age	Region	Job Classification	Date Joined 
+
+Customer ID	Name	Surname	Gender	Age	Region	Job Classification	Date Joined	loan Balance
+
+TO process Un structured Data.
+1. text, images, videos, audio, http://, emojis
+
+1. we will load data into variable using file operations
+2. split the data into sentences
+3. split the sentences into words
+4. remove images, videos, audio, http://, emojis and others
+5. understand relationships between words and make it structured data
+6. we would be encoding => converting words to numbers
+
+NLTK
+!pip install nltk
+import nltk
+nltk.download('wordnet')
+nltk.download('punkt_tab')
+
+do, doing,  => do
+good, better, best => good
+
+sentence tokenization
+word tokenization
+
+we are going to find the root word of every word
+1. stemming => fast, but not accurate
+when we process not so critical data we will use stemming 
+for example, Novels processing
+PortarStemmar, SnowballStemmer, LancasterStemmer
+less agg        moderate Agg    high aggres
+slow            moderate        moderate
+accurate        moderate        moderate
+
+2. Lemmatization => slow, but accurate
+when we process critical data we will use lemmatization
+for example, documents related to Law
+
+
